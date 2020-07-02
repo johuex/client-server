@@ -16,8 +16,8 @@ class MessengerApp(clientui.Ui_MainWindow):
         self.timer.start(1000)
 
     def sendMessege(self):
-        username = self.username_line
-        password = self.password_line
+        username = self.username_line.text()
+        password = self.lineEdit_2.text()
         text = self.messageEdit.toPlainText()
 
         if not username:
